@@ -1,3 +1,7 @@
+<?php
+require_once 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +13,13 @@
 </head>
 
 <body>
-    <form class="searchform" action="search.php" method="post">
-        <label for="search">Search for user:</label>
-        <input type="text" id="search" name="usersearch" placeholder="Search...">
-        <button>Search</button>
+    <h3>Signup</h3>
+
+    <form action="includes/formhandler.inc.php" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pwd" placeholder="Password">
+        <input type="text" name="email" placeholder="E-Mail">
+        <button>Signup</button>
     </form>
 </body>
 
